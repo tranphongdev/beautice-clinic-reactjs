@@ -1,0 +1,26 @@
+<svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="28" fill="#E5E5E5"/>
+<g id="Home 1" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="4989" transform="translate(-150 -4870)" fill="white"/>
+<g id="Site Footer">
+<rect id="Bottom BG" width="1440" height="125" transform="matrix(1 0 0 -1 -150 119)" fill="#0D165C"/>
+<g id="Footer BG">
+<path id="Footer BG 2" fill-rule="evenodd" clip-rule="evenodd" d="M33.633 -585.729C-49.0628 -590.661 -120.098 -527.62 -125.03 -444.924L-145.071 -108.824C-150.003 -26.1285 -86.9619 44.9072 -4.26607 49.8384L1140.43 118.097C1207.91 122.121 1267.64 80.8757 1290 20.6218V-456.934C1264.49 -491.388 1224.47 -514.72 1178.33 -517.471L33.633 -585.729Z" fill="#DFE2FF"/>
+<path id="Footer BG 1" fill-rule="evenodd" clip-rule="evenodd" d="M-150 -5.50311C-125.557 30.7051 -85.5833 55.9779 -38.6723 60.0751L639.892 119.342H1245.66C1270.2 95.193 1286.59 62.5206 1289.82 25.5367L1290 23.4473V-424.119C1265.29 -456.597 1227.5 -478.935 1183.64 -482.765L17.6352 -584.606C-64.8933 -591.815 -137.639 -530.756 -144.847 -448.227L-150 -389.234V-5.50311Z" fill="#172176"/>
+</g>
+<g id="Social Media">
+<g id="facebook-f" clip-path="url(#clip1_0_1)">
+<path id="Vector" d="M18.3174 15.6593L19.0117 10.6212H14.6704V7.35173C14.6704 5.97339 15.2769 4.62984 17.2212 4.62984H19.1948V0.340373C19.1948 0.340373 17.4038 0 15.6914 0C12.1162 0 9.7793 2.41306 9.7793 6.78136V10.6212H5.80518V15.6593H9.7793V27.8388H14.6704V15.6593H18.3174Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="4989" fill="white" transform="translate(-150 -4870)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="25" height="27.8388" fill="white"/>
+</clipPath>
+</defs>
+</svg>
