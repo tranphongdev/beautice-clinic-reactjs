@@ -170,7 +170,7 @@ const customStyles = css`
     .footer {
         position: relative;
         background-repeat: no-repeat;
-        background-image: url('../src/assets/footer-bg-dark.svg');
+        background-image: url('./src/assets/footer-bg-dark.svg');
         background-size: cover;
         overflow: hidden;
     }
