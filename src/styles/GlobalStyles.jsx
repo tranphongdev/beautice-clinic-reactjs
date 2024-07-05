@@ -170,7 +170,7 @@ const customStyles = css`
     .footer {
         position: relative;
         background-repeat: no-repeat;
-        background-image: url('/src/assets/footer-bg-dark.svg');
+        background-image: url('../src/assets/footer-bg-dark.svg');
         background-size: cover;
         overflow: hidden;
     }
@@ -234,7 +234,7 @@ const customStyles = css`
         right: 0;
     }
     .slogan {
-        background-image: url('/src/assets/bgSlogan.png');
+        background-image: url('./src/assets/bgSlogan.png');
         margin: 149px 0 112px;
         text-align: center;
     }
@@ -271,7 +271,7 @@ const customStyles = css`
         width: 100%;
     }
     .slogan-service {
-        background-image: url('/src/assets/slogan-service.png');
+        background-image: url('./src/assets/slogan-service.png');
         background-repeat: no-repeat;
         background-size: cover;
         margin: 160px 0 116px;
@@ -304,7 +304,7 @@ const customStyles = css`
     }
 
     .slogan-gallery {
-        background-image: url('/src/assets/slogan-gallry.png');
+        background-image: url('./src/assets/slogan-gallry.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -325,7 +325,7 @@ const customStyles = css`
         right: 0;
     }
     .blog {
-        background-image: url('/src/assets/blog-bg.png');
+        background-image: url('./src/assets/blog-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
         margin: 36px 0 108px;
