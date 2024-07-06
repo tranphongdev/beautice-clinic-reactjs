@@ -1,6 +1,6 @@
+import tw from 'twin.macro';
 import { Container } from '~/constants/styled';
 import Play_button from '~/assets/PlayBtn.svg';
-import tw from 'twin.macro';
 
 function Slogan() {
     return (

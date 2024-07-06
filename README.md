@@ -1,37 +1,33 @@
-# React + Vite + twin.macro
-
-![Preview](docs/preview.png)
-
 ## Getting Started
 
 1. Clone this repository
 
-   ```bash
-   git clone https://github.com/hendraaagil/react-vite-twin-macro.git
-   ```
+    ```bash
+    git clone https://github.com/tranphongdev/beautice-clinic-reactjs.git
+    ```
 
 2. Go to project directory and install all dependencies
 
-   ```bash
-   cd react-vite-twin-macro
-   yarn # or npm install
-   ```
+    ```bash
+    cd beautice-clinic-reactjs
+    yarn # or npm install
+    ```
 
 3. Available scripts
 
-   ```bash
-   # Run development server
-   yarn dev
+    ```bash
+    # Run development server
+    npm run dev
 
-   # Build project
-   yarn build
+    # Build project
+    npm run build
 
-   # Serve project
-   yarn serve
-   ```
+    # Serve project
+    npm run serve
+    ```
 
 ## Learn More
 
-- [React Documentation](https://reactjs.org)
-- [Vite Documentation](https://vitejs.dev/guide)
-- [twin.macro Documentation](https://github.com/ben-rogerson/twin.macro)
+-   [React Documentation](https://reactjs.org)
+-   [Vite Documentation](https://vitejs.dev/guide)
+-   [twin.macro Documentation](https://github.com/ben-rogerson/twin.macro)
