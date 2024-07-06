@@ -160,6 +160,7 @@ const customStyles = css`
         padding: 17px 24px;
         color: var(--gray);
         caret-color: var(--primary);
+        /* position: relative; */
     }
 
     .form-control::placeholder {
@@ -290,6 +291,30 @@ const customStyles = css`
         }
     }
 
+    @keyframes downSubmenu {
+        from {
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .submenu-down {
+        animation: downSubmenu 0.3s ease forwards;
+        transition: all 0.3s ease-out;
+        background-color: var(--white);
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        margin-top: 10px;
+        z-index: 9999;
+    }
+
     .tab-content-down {
         animation: down 0.3s ease forwards;
         border-radius: 0px 0px 20px 20px;
@@ -386,6 +411,12 @@ const customStyles = css`
         to {
             transform: rotate(1turn);
         }
+    }
+
+    .team-bubble {
+        position: absolute;
+        z-index: -9999;
+        right: 0;
     }
 `;
 

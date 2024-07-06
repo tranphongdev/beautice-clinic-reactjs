@@ -8,21 +8,19 @@ const Contact = React.lazy(() => import('./Contact'));
 
 function Home() {
     return (
-        <>
-            <Suspense
-                fallback={
-                    <div tw="w-screen h-screen flex justify-center items-center">
-                        <div className="loader"></div>
-                    </div>
-                }
-            >
-                <Hero />
-                <Services />
-                <About />
-                <Professional />
-                <Contact />
-            </Suspense>
-        </>
+        <Suspense
+            fallback={
+                <div tw="w-screen h-screen flex justify-center items-center">
+                    <div className="loader"></div>
+                </div>
+            }
+        >
+            <Hero />
+            <Services />
+            <About />
+            <Professional />
+            <Contact />
+        </Suspense>
     );
 }
 

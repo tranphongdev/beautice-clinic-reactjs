@@ -1,4 +1,5 @@
 import tw from 'twin.macro';
+import { Suspense } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -6,17 +7,17 @@ import { FaBars } from 'react-icons/fa';
 
 import { Container } from '~/constants/styled';
 import { menus } from '~/constants';
-
 import Logo from '~/assets/logo-blue.svg';
-import Button from './Button';
-import Footer from './Footer';
+import Button from '~/components/Button';
 import { Fragment } from 'react';
+
+const Footer = React.lazy(() => import('~/components/Footer'));
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
-    const activeNavLink = ({ isActive }) => (isActive ? 'activeMenu' : '');
+    const [showSupMenu, setShowSubMenu] = useState(false);
+
     useEffect(() => {
-        // Lắng nghe sự kiện khi scroll
         window.onscroll = function () {
             scrollFunction();
         };
@@ -38,14 +39,19 @@ function Header() {
         }
     };
 
-    // Xử lý sự kiện click vào nút scroll lên đầu trang
     const scrollToTop = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     };
 
     return (
-        <>
+        <Suspense
+            fallback={
+                <div tw="w-screen h-screen flex justify-center items-center">
+                    <div className="loader"></div>
+                </div>
+            }
+        >
             <Container>
                 <header tw="mt-[41px] flex justify-between items-center bg-transparent">
                     {/* Logo */}
@@ -87,9 +93,43 @@ function Header() {
                         </ul>
 
                         {/* Btn Contact */}
-                        <Link to="/contact" tw="text-white">
-                            <Button color="pink">Contact</Button>
-                        </Link>
+                        <div tw="relative">
+                            <button onClick={() => setShowSubMenu(!showSupMenu)} tw="text-white">
+                                <Button color="pink">
+                                    More <i className="fa-solid fa-chevron-down"></i>
+                                </Button>
+                            </button>
+
+                            {/* Sub menu */}
+                            {showSupMenu && (
+                                <ul
+                                    tw="bg-white shadow-lg flex flex-col rounded-[20px] px-3 py-3"
+                                    className={`${showSupMenu ? 'submenu-down' : ''}`}
+                                >
+                                    <Link
+                                        onClick={() => setShowSubMenu(!showSupMenu)}
+                                        tw="py-2 px-2 transition-colors rounded-[8px] hover:text-white hover:bg-[var(--primary)]"
+                                        to="/teams"
+                                    >
+                                        Teams
+                                    </Link>
+                                    <Link
+                                        onClick={() => setShowSubMenu(!showSupMenu)}
+                                        tw="py-2 px-2 transition-colors rounded-[8px] hover:text-white hover:bg-[var(--primary)]"
+                                        to="/contact"
+                                    >
+                                        Contact
+                                    </Link>
+                                    <Link
+                                        onClick={() => setShowSubMenu(!showSupMenu)}
+                                        tw="py-2 px-2 transition-colors rounded-[8px] hover:text-white hover:bg-[var(--primary)]"
+                                        to="/home"
+                                    >
+                                        Home Page 2
+                                    </Link>
+                                </ul>
+                            )}
+                        </div>
                     </div>
 
                     {/* Button Bars */}
@@ -147,7 +187,7 @@ function Header() {
                 {/* <img src={arrowUp} alt="Arrow Up" /> */}
                 <i className="fa-solid fa-arrow-up"></i>
             </button>
-        </>
+        </Suspense>
     );
 }
 

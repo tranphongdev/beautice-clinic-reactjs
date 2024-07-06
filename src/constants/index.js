@@ -35,6 +35,9 @@ import Mail from '~/assets/mail-bulk.svg';
 import post01 from '~/assets/post01.png';
 import post02 from '~/assets/post02.png';
 import post03 from '~/assets/post03.png';
+import user1 from '~/assets/user1.svg';
+import user2 from '~/assets/user2.svg';
+import user3 from '~/assets/user3.svg';
 
 export const menus = [
     { key: 'home-menu', title: 'Home', path: '/' },
@@ -235,5 +238,29 @@ export const posts = [
         title: 'Treatments',
         name: 'About skin care you need to know',
         desc: 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the…',
+    },
+];
+
+export const supportteams = [
+    {
+        id: 1,
+        avatar: user1,
+        name: 'Lina Gustav',
+        job: 'Pharmacist',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.',
+    },
+    {
+        id: 2,
+        avatar: user2,
+        name: 'Adam White',
+        job: 'Finance',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.',
+    },
+    {
+        id: 3,
+        avatar: user3,
+        name: 'Jane Doe',
+        job: 'Marketer',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.',
     },
 ];
