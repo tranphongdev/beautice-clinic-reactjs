@@ -418,6 +418,26 @@ const customStyles = css`
         z-index: -9999;
         right: 0;
     }
+
+    .hero-homepage {
+        position: relative;
+    }
+    .hero-homepage-img {
+        position: absolute;
+        top: -106px;
+        width: 100%;
+        z-index: -9999;
+        height: 1000px;
+        object-fit: cover;
+    }
+    .why-homepage {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 740px;
+        object-fit: cover;
+        z-index: -9999;
+    }
 `;
 
 const GlobalStyles = () => (

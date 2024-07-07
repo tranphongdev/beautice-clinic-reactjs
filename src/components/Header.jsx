@@ -2,7 +2,6 @@ import tw from 'twin.macro';
 import { Suspense } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { useState } from 'react';
-import { useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 
 import { Container } from '~/constants/styled';
@@ -10,39 +9,13 @@ import { menus } from '~/constants';
 import Logo from '~/assets/logo-blue.svg';
 import Button from '~/components/Button';
 import { Fragment } from 'react';
+import ScrollTop from '~/utils/scrollTop';
 
 const Footer = React.lazy(() => import('~/components/Footer'));
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const [showSupMenu, setShowSubMenu] = useState(false);
-
-    useEffect(() => {
-        window.onscroll = function () {
-            scrollFunction();
-        };
-        // Xoá sự kiện khi component unmout
-        return () => {
-            window.onscroll = null;
-        };
-    }, []);
-
-    const scrollFunction = () => {
-        const btnScrollToTop = document.getElementById('btnScrollToTop');
-        // Hiển thị nút khi scroll xuống 20px từ đầu trang
-        if (btnScrollToTop) {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btnScrollToTop.style.display = 'flex';
-            } else {
-                btnScrollToTop.style.display = 'none';
-            }
-        }
-    };
-
-    const scrollToTop = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    };
 
     return (
         <Suspense
@@ -94,11 +67,11 @@ function Header() {
 
                         {/* Btn Contact */}
                         <div tw="relative">
-                            <button onClick={() => setShowSubMenu(!showSupMenu)} tw="text-white">
+                            <div onClick={() => setShowSubMenu(!showSupMenu)} tw="text-white">
                                 <Button color="pink">
                                     More <i className="fa-solid fa-chevron-down"></i>
                                 </Button>
-                            </button>
+                            </div>
 
                             {/* Sub menu */}
                             {showSupMenu && (
@@ -183,10 +156,7 @@ function Header() {
 
             <Footer />
 
-            <button onClick={scrollToTop} id="btnScrollToTop" title="Go to top">
-                {/* <img src={arrowUp} alt="Arrow Up" /> */}
-                <i className="fa-solid fa-arrow-up"></i>
-            </button>
+            <ScrollTop />
         </Suspense>
     );
 }
