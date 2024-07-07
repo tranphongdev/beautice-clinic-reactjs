@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import HomePage from './pages/Home/HomePage02/HomePage';
 
 const Header = React.lazy(() => import('./components/Header'));
 const Home = React.lazy(() => import('./pages/Home/Home'));
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/teams" element={<Team />} />
                     </Route>
+                    <Route path="/home" element={<HomePage />} />
                 </Routes>
             </Suspense>
 

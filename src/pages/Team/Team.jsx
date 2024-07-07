@@ -35,8 +35,8 @@ function Team() {
                     <p className="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
                 </div>
                 <div>
-                    {supportteams?.map((item) => (
-                        <Support item={item} />
+                    {supportteams?.map((item, index) => (
+                        <Support key={index} item={item} />
                     ))}
                 </div>
             </Container>

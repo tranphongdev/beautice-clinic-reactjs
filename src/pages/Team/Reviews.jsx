@@ -16,7 +16,7 @@ function Reviews() {
 
                 <div tw="flex justify-between items-center gap-[90px]">
                     <div>
-                        <i class="fa-solid fa-arrow-left"></i>
+                        <i className="fa-solid fa-arrow-left"></i>
                     </div>
                     <div tw="flex flex-col items-center text-center">
                         <div>
@@ -33,7 +33,7 @@ function Reviews() {
                         </div>
                     </div>
                     <div>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
