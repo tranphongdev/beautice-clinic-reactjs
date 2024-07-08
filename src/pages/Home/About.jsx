@@ -9,12 +9,12 @@ function About() {
         <Container>
             <div tw="flex mt-[135px] items-center lg:flex-row flex-col">
                 {/* About content */}
-                <div>
+                <div tw="flex flex-col items-center lg:items-start">
                     <h3 className="text-heading">About Us</h3>
                     <p className="text-title" tw="lg:w-[600px] w-auto">
                         We are the best beauty clinic
                     </p>
-                    <div className="text-desc" tw="max-w-[483px]">
+                    <div className="text-desc" tw="lg:max-w-[483px] w-full">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec
                             amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim.
@@ -26,7 +26,7 @@ function About() {
 
                     <div tw="flex lg:flex-row flex-col items-center gap-[44px] mt-[49px]">
                         <Button color="pink">Learn More</Button>
-                        <div tw="flex items-center gap-3">
+                        <div tw="flex items-center gap-3 cursor-pointer">
                             <img src={Play_button} alt="Play_button" />
                             <span tw="text-[#8B8B8B] font-semibold tracking-[1.6px]">Watch Video</span>
                         </div>

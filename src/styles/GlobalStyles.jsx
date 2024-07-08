@@ -187,6 +187,8 @@ const customStyles = css`
         position: absolute;
         z-index: -9;
         width: 100%;
+        right: 0;
+        top: 0;
     }
 
     #btnScrollToTop {

@@ -16,7 +16,7 @@ function Footer() {
 
             <Container>
                 {/* Footer top */}
-                <div tw="mt-[225px] mb-[142px] gap-10 lg:gap-0 items-center flex lg:flex-row flex-col justify-between lg:items-start">
+                <div tw="lg:mt-[225px] mt-[115px] mb-[142px] gap-10 lg:gap-0 items-center flex lg:flex-row flex-col justify-between lg:items-start">
                     <div>
                         <div tw="mb-[33px]">
                             <img src={FooterLogo} alt="FooterLogo" />

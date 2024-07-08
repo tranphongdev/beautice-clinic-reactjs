@@ -19,7 +19,7 @@ function Our() {
                     <div>
                         <img src={ourBg} alt="ourBg" tw="w-full" />
                     </div>
-                    <div tw="max-w-[475px]">
+                    <div tw="lg:max-w-[475px] w-full flex flex-col items-center justify-center">
                         <h3 className="text-heading">Our Vision</h3>
                         <p className="text-title">Be the best and go international</p>
                         <div>
@@ -38,7 +38,7 @@ function Our() {
 
             <Container>
                 <div tw="flex justify-between lg:flex-row flex-col mb-[123px]">
-                    <div tw="max-w-[545px]">
+                    <div tw="lg:max-w-[545px] w-full flex flex-col items-center justify-center">
                         <h3 className="text-heading">Our Mission</h3>
                         <p className="text-title">
                             Special & premium service <br />

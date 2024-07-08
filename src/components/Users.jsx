@@ -7,7 +7,7 @@ function Users() {
             {users?.map((user) => (
                 <div
                     key={user?.id}
-                    tw="px-[77px] flex flex-col items-center text-center rounded-[42px] hover:bg-white hover:shadow-2xl cursor-pointer transition-all"
+                    tw="px-[56px] flex flex-col items-center text-center rounded-[42px] hover:bg-white hover:shadow-2xl cursor-pointer transition-all"
                 >
                     <div tw="pt-[91px] pb-[53px]">
                         <img src={user?.avatar} alt={user?.name} tw="w-[146px] h-[146px] object-cover" />

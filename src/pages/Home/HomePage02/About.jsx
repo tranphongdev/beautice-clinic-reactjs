@@ -11,7 +11,7 @@ function About() {
                 <div>
                     <img src={aboutHomepage} alt="aboutHomepage" tw="w-full" />
                 </div>
-                <div tw="max-w-[483px]">
+                <div tw="lg:max-w-[483px] w-full flex flex-col items-center lg:items-start">
                     <h3 className="text-heading">About Us</h3>
                     <p className="text-title">We are the best beauty clinic</p>
                     <p className="text-desc" tw="mb-[35px]">

@@ -2,8 +2,8 @@ import tw from 'twin.macro';
 
 function Support({ item }) {
     return (
-        <div tw="flex justify-between items-center lg:flex-row flex-col mb-[79px]">
-            <div>
+        <div tw="flex lg:gap-[172px] gap-[40px] items-center lg:flex-row flex-col mb-[79px]">
+            <div tw="w-full">
                 <img src={item?.avatar} alt="item" tw="w-full" />
             </div>
             <div tw="max-w-[434px]">

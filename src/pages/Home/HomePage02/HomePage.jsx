@@ -24,7 +24,7 @@ function HomePage() {
             <Hero />
             <About />
             <Service />
-            <Why />
+            {/* <Why /> */}
             <Blog />
             <Request />
             <Footer />

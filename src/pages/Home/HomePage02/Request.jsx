@@ -6,7 +6,7 @@ function Request() {
     return (
         <Container>
             <div tw="flex justify-between items-center lg:flex-row flex-col mb-[109px] gap-4">
-                <div tw="max-w-[391px]">
+                <div tw="lg:max-w-[391px] w-full flex flex-col items-center lg:items-start">
                     <h3 className="text-title">Request call services</h3>
                     <p className="text-desc">
                         Lorem ipsum dolor sit amet, consect adipiscing elit <span>Contact Us.</span>
@@ -14,7 +14,7 @@ function Request() {
                 </div>
 
                 <div tw="flex relative">
-                    <div tw="lg:w-[658px] w-[80vw]">
+                    <div tw="lg:w-[658px] w-[90vw]">
                         <input
                             type="text"
                             tw="m-0"

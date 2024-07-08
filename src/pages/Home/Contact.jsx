@@ -16,12 +16,12 @@ function Contact() {
             <Container>
                 <div tw="flex lg:flex-row flex-col justify-between items-center mt-[144px]">
                     {/* Contact Image */}
-                    <div>
-                        <img loading="lazy" src={ContactBg} alt="ContactBg" />
+                    <div tw="w-full">
+                        <img loading="lazy" src={ContactBg} alt="ContactBg" tw="w-full" />
                     </div>
 
                     {/* Contact Content */}
-                    <div>
+                    <div tw="w-full">
                         <div tw="mb-[44px] flex flex-col lg:items-start items-center">
                             <h3 className="text-heading">Contact Us</h3>
                             <p className="text-title">

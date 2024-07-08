@@ -32,20 +32,20 @@ function ServicePage() {
                     <div>
                         <div tw="flex justify-between items-center gap-[60px] lg:flex-row flex-col mb-[68px]">
                             <img loading="lazy" src={bgsrc1} alt="bgsrc1" tw="w-full lg:w-[291px]" />
-                            <img loading="lazy" src={bgsrc2} alt="bgsrc1" />
+                            <img loading="lazy" src={bgsrc2} alt="bgsrc1" tw="w-full lg:w-auto" />
                         </div>
                         <div tw="flex justify-between items-center gap-[60px] lg:flex-row flex-col">
-                            <img loading="lazy" src={bgsrc3} alt="bgsrc1" />
+                            <img loading="lazy" src={bgsrc3} alt="bgsrc1" tw="w-full lg:w-auto" />
                             <img loading="lazy" src={bgsrc4} alt="bgsrc1" tw="w-full lg:w-[291px]" />
                         </div>
                     </div>
                 </div>
 
-                <div tw="flex justify-between items-center lg:flex-row flex-col mt-[141px]">
-                    <div>
-                        <img src={Animation1} alt="Animation1" />
+                <div tw="flex justify-between items-center lg:flex-row flex-col mt-[141px] w-full">
+                    <div tw="w-full">
+                        <img src={Animation1} alt="Animation1" tw="w-full" />
                     </div>
-                    <div tw="max-w-[475px]">
+                    <div tw="lg:max-w-[475px] w-full">
                         <h3 className="text-heading">Beauty Consultation</h3>
                         <p className="text-title">We services beauty consultation</p>
                         <p className="text-desc">
@@ -61,8 +61,8 @@ function ServicePage() {
                     </div>
                 </div>
 
-                <div tw="flex justify-between items-center lg:flex-row flex-col my-[92px]">
-                    <div tw="max-w-[475px]">
+                <div tw="flex justify-between items-center lg:flex-row flex-col my-[92px] w-full">
+                    <div tw="lg:max-w-[475px] w-full">
                         <h3 className="text-heading">Skin Treatements</h3>
                         <p className="text-title">Skin care and treatment by expert</p>
                         <p className="text-desc">
@@ -77,16 +77,16 @@ function ServicePage() {
                         </div>
                     </div>
 
-                    <div>
-                        <img loading="lazy" src={Animation2} alt="Animation1" />
+                    <div tw="w-full">
+                        <img loading="lazy" src={Animation2} alt="Animation1" tw="w-full" />
                     </div>
                 </div>
 
-                <div tw="flex justify-between items-center lg:flex-row flex-col">
-                    <div>
-                        <img loading="lazy" src={Animation3} alt="Animation1" />
+                <div tw="flex justify-between items-center lg:flex-row flex-col w-full">
+                    <div tw="w-full">
+                        <img loading="lazy" src={Animation3} alt="Animation1" tw="w-full" />
                     </div>
-                    <div tw="max-w-[475px]">
+                    <div tw="lg:max-w-[475px] w-full">
                         <h3 className="text-heading">Beauty Product</h3>
                         <p className="text-title">We present quality beauty products</p>
                         <p className="text-desc">

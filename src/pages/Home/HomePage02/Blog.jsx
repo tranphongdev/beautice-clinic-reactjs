@@ -90,7 +90,7 @@ function Blog() {
                             A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...
                         </p>
                         <p tw="flex gap-2 items-center text-[var(--primary)] font-semibold">
-                            Learn more{' '}
+                            Learn more
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
